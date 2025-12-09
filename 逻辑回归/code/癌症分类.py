@@ -18,12 +18,12 @@ from sklearn.preprocessing import StandardScaler
 
 def dm01_LogisticRegression():
     # 1. 获取数据.
-    data = pd.read_csv('data/breast-cancer-wisconsin.csv')
+    data = pd.read_csv('../data/breast-cancer-wisconsin.csv')
     data.info()
 
     # 2. 数据预处理.
-    # data = data.replace(to_replace='?', value=np.NAN)
-    data = data.replace('?', np.NaN)
+    # data = data.replace(to_replace='?', value=np.nan)
+    data = data.replace('?', np.nan)
     data = data.dropna()
     data.info()
 
